@@ -1,0 +1,24 @@
+{
+    "name": "my_workspace",
+    "version": "0.1.0",
+    "private": true,
+    "devDependencies": {
+        "@bazel/bazelisk": "latest",
+        "@bazel/buildifier": "latest",
+        "@bazel/ibazel": "latest"
+    },
+    "scripts": {
+        "serve": "ibazel run :server",
+        "build": "bazel build //...",
+        "test": "bazel test //..."
+    },
+    "dependencies": {
+        "@babel/cli": "^7.8.4",
+        "@babel/core": "^7.9.6",
+        "@babel/preset-env": "^7.9.6",
+        "domino": "^2.1.5",
+        "express": "^4.17.1",
+        "http-server": "^0.12.3",
+        "mocha": "^7.1.2"
+    }
+}
